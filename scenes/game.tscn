@@ -1,0 +1,11 @@
+[gd_scene load_steps=2 format=3 uid="uid://822221ewn1w6"]
+
+[ext_resource type="Script" uid="uid://cpodhj5w3i2p7" path="res://scripts/game/GameManager.cs" id="1_uwrxv"]
+
+[node name="GameManager" type="Node2D"]
+
+[node name="MapData" type="Node" parent="."]
+metadata/initialized = false
+
+[node name="GameManager" type="Node" parent="."]
+script = ExtResource("1_uwrxv")

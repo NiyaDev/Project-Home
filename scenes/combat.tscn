@@ -1,0 +1,16 @@
+[gd_scene load_steps=2 format=3 uid="uid://dy4u2xww31asy"]
+
+[ext_resource type="Script" uid="uid://7lpx16pd05st" path="res://scripts/combat/MapHandler.cs" id="1_qajva"]
+
+[node name="Root" type="Node2D"]
+
+[node name="Map Handler" type="Node" parent="."]
+script = ExtResource("1_qajva")
+metadata/mapdata = NodePath("")
+
+[node name="Player Controller" type="Node" parent="."]
+
+[node name="Enemy Controller" type="Node" parent="."]
+
+[node name="Line2D" type="Line2D" parent="."]
+points = PackedVector2Array(519, 495, 206, 489, 139, 298, 334, 230, 891, 179, 1082, 602)
