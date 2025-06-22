@@ -7,12 +7,14 @@ public partial class MapHandler : Node {
 	public override void _Process(double delta) {
 		if (mapdata == null) {
 			// Attempt to grab mapdata
-			mapdata = GetNode<Node>("/root/SceneHandler/MapData");
+			mapdata = GetNode<Node>("../../GameManager/MapData");
 			if (mapdata == null) return;
 			
 			// Initialize map
-			GD.Print("Initializing map");
-			mapdata.SetMeta("Initialized", true);
+			//if (mapdata.GetMeta("Initialized")) {
+				GD.Print("Initializing map");
+				//mapdata.SetMeta("Initialized", true);
+			//}
 		}
 		
 	}
