@@ -1,11 +1,15 @@
-[gd_scene load_steps=2 format=3 uid="uid://822221ewn1w6"]
+[gd_scene load_steps=3 format=3 uid="uid://822221ewn1w6"]
 
 [ext_resource type="Script" uid="uid://cpodhj5w3i2p7" path="res://scripts/game/GameManager.cs" id="1_uwrxv"]
+[ext_resource type="Script" uid="uid://bgp6j6dg7djb2" path="res://scripts/combat/MapData.cs" id="1_yqjtg"]
 
 [node name="GameManager" type="Node2D"]
 
 [node name="MapData" type="Node" parent="."]
+script = ExtResource("1_yqjtg")
 metadata/initialized = false
 
 [node name="Game Manager" type="Node" parent="."]
 script = ExtResource("1_uwrxv")
+
+[node name="Save Manager" type="Node" parent="."]
